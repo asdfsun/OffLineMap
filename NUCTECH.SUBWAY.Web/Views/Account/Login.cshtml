@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/css/login.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="logincontainer">
+        <div class="logoheader"></div> 
+        <div class="formlogin">
+            <ul>
+                <li id="accountLi">
+                    <i class="ico_uid"></i>
+                    <input type="text" name="" maxlength="20" tabindex="1" placeholder="请输入账号" class="ipt" value="" id="Account" />
+                    <span id="accountTitle"></span>
+                </li>
+                <li id="passwordLi">
+                    <i class="ico_pwd"></i>
+                    <input type="password" name="" maxlength="20" tabindex="2" placeholder="请输入密码" class="ipt" value="" id="Password" />
+                    <span id="passwordTitle"></span>
+                </li>
+                <li class="formlogin_cz">
+                    <span>
+                        <input type="checkbox" id="isRemember" class="checkboxclass" />记住帐号
+                    </span> 
+                </li>
+            </ul>
+            <div>
+                <input type="button" class="button-submit" value="登  录" tabindex="3" id="btnLogin" />
+            </div>
+        </div>
+        <p class="copyright">@ViewBag.CopyrightInfo</p>
+    </div>
+</body>
+</html>
+<script src="~/Content/javascript/login/login.js"></script>
+
+

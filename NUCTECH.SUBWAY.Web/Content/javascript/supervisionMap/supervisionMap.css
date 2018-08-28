@@ -1,0 +1,11 @@
+.supervisionMap_sample ul li i.bigPng {
+    background: url("mapIcon/da.png") no-repeat center;
+}
+
+.supervisionMap_sample ul li i.middlePng {
+    background: url("mapIcon/zhong.png") no-repeat center;
+}
+
+.supervisionMap_sample ul li i.smallPng {
+    background: url("mapIcon/xiao.png") no-repeat center;
+}

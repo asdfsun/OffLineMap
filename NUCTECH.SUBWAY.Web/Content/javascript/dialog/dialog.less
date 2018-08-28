@@ -1,0 +1,117 @@
+
+@import "../../style/unit-btn";
+.plugin_dialog {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.plugin_dialog .plugin_dialog_bg {
+  background: #000;
+  filter: alpha(opacity=60);
+  min-height: 100%;
+  opacity: .6;
+  position: fixed;
+  width: 100%;
+  _height: 6400px;
+}
+
+.plugin_dialog .plugin_dialog_content {
+  position: fixed;
+  min-width: 300px;
+  z-index: 1000;
+  background: rgb(255, 255, 255);
+}
+
+.plugin_dialog .plugin_dialog_hd {
+  background: #e1e1e1;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  .plugin_dialog_logotop {
+    margin-left: 4%;
+    p {
+      color: #333;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 30px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+  .closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 6px;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    background: url('images/closeBtn.png') no-repeat 0 0;
+    &:hover{
+      background-position: -18px 0;
+    }
+  }
+}
+.plugin_dialog .plugin_dialog_bd {
+  border: #000 solid 1px;
+  position: relative;
+  text-align: left;
+  padding: 0 20px;
+  .ask,.warn,.ok{
+      display: inline-block;
+      position: relative;
+      top: 5px;
+      width: 30px;
+      height: 22px;
+      background: url('images/dialog_icon.png') no-repeat 1px 0;
+    }
+  .warn{
+      background-position: -28px 0;
+    }
+  .ok{
+      background-position: -57px 0;
+  }
+}
+.plugin_dialog .plugin_dialog_m40{
+  margin: 40px auto;
+}
+.plugin_dialog .Btn {
+  float: right;
+  margin-bottom: 20px;
+}
+.plugin_dialog .title_box {
+  height: 30px;
+  width: 85%;
+}
+.plugin_dialog_content .plugin_dialog_bd {
+  border: none;
+}
+.plugin_dialog_warning {
+  .plugin_dialog_content {
+    background: #fef0ed;
+    border: 1px solid #F86B52;
+    bottom: 1% ;
+    right: 1%;
+    position: fixed;
+    top: auto;
+    width: 30%;
+    z-index: 1000;
+    .plugin_dialog_hd {
+      background: #fa856f;
+      p{
+        color: @u-colorWhite;
+      }
+    }
+    .plugin_dialog_bd {
+      line-height: 30px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  }
+}

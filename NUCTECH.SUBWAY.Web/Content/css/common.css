@@ -1,0 +1,1135 @@
+body {
+    background: #e6eaee;
+}
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+.header {
+    width: 100%;
+    height: 50px;
+    background: #0089e1;
+}
+
+    .header .headerLeft {
+        float: left;
+    }
+
+        .header .headerLeft .logo {
+            display: inline-block;
+            margin-left: 20px;
+            margin-top: 12px;
+            width: 60px;
+            height: 30px;
+            line-height: 100%;
+            background: url("../images/icon.png") no-repeat -2px 2px;
+        }
+
+        .header .headerLeft .title {
+            display: inline-block;
+            padding-left: 10px;
+            vertical-align: 8px;
+            width: 180px;
+            height: 100%;
+            font-size: 18px;
+            color: #ffffff;
+        }
+
+    .header .headerRight {
+        float: right;
+        margin-right: 20px;
+        height: 100%;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+        .nav {
+            float: left;
+            margin-right: 30px;
+            height: 100%;
+        }
+
+            .nav .navBar {
+                height: 100%;
+            }
+
+                .nav .navBar .navBtn {
+                    float: left;
+                    width: 105px;
+                    height: 100%;
+                    background: none;
+                    cursor: pointer;
+                }
+
+                     .nav .navBar .navBtn span {
+                        display: block;
+                        height: 100%;
+                        line-height: 50px;
+                        text-align: center;
+                    }
+
+                     .nav .navBar .navBtn .secondLevel {
+                        position: relative;
+                        z-index: 9999;
+                        visibility: hidden;
+                        opacity: 0;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                    }
+
+                         .nav .navBar .navBtn .secondLevel li {
+                            height: 54px;
+                            line-height: 54px;
+                            background: #ffffff;
+                            text-align: center;
+                            color: #333333;
+                            cursor: default;
+                        }
+
+                            .nav .navBar .navBtn .secondLevel li:hover {
+                                background: #d3f1ff;
+                            }
+
+                    .nav .navBar .navBtn .underline {
+                        display: none;
+                        margin-top: -3px;
+                        height: 3px;
+                        background: #feff9b;
+                        box-shadow: 0 1px 5px #333333;
+                    }
+
+                     .nav .navBar .navBtn.on {
+                        background: -webkit-linear-gradient(top, rgba(0, 130, 214, 0.5), rgba(0, 96, 158, 0.5));
+                    }
+
+                       .nav .navBar .navBtn.on .underline {
+                            display: block;
+                        }
+
+                     .nav .navBar .navBtn:hover {
+                        background: -webkit-linear-gradient(top, rgba(0, 130, 214, 0.5), rgba(0, 96, 158, 0.5));
+                    }
+
+                      .nav .navBar .navBtn:hover .underline {
+                            display: block;
+                        }
+
+                         .nav .navBar .navBtn:hover .secondLevel {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+
+        .user {
+            float: left;
+            margin-top: 14px;
+            margin-right: 4px;
+            /*cursor: pointer;*/
+        }
+
+            .user i {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url("../images/icon.png") no-repeat -1px -29px;
+            }
+
+             .user span {
+                vertical-align: 4px;
+            }
+
+         .more {
+            float: left;
+            width: 40px;
+            height: 100%;
+            margin-right: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+
+            .more em {
+                display: block;
+                margin: 13px auto 0;
+                width: 24px;
+                height: 24px;
+                background: url("../images/icon.png") no-repeat -3px -80px;
+            }
+
+             .more:hover .tips {
+                display: block;
+            }
+
+            .more .tips {
+                top: 60px;
+                right: -10px;
+                width: 180px
+            }
+
+                 .more .tips .tipsContent li {
+                    padding-left: 42px;
+                    color: #333;
+                    text-align: left;
+                    background: #fff;
+                    border: 0;
+                    height: 48px;
+                    line-height: 48px;
+                }
+
+                     .more .tips .tipsContent li:hover {
+                        background: #eee;
+                         
+                    }
+
+                     .more .tips .tipsContent li i {
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background: url(../images/icon.png) left -180px no-repeat;
+                    }
+
+                        .more .tips .tipsContent li i.shutdown {
+                            background-position: 0 -180px;
+                        }
+
+                         .more .tips .tipsContent li i.resetPwd {
+                            background-position: -88px -180px;
+                        }
+
+                          .more .tips .tipsContent li i.cancel {
+                            background-position: -149px -180px;
+                        }
+
+                    .more .tips .tipsContent li:hover i.shutdown {
+                        background-position: -30px -180px;
+                    }
+
+                   .more .tips .tipsContent li:hover i.resetPwd {
+                        background-position: -58px -180px;
+                    }
+
+                    .more .tips .tipsContent li:hover i.cancel {
+                        background-position: -119px -180px;
+                    }
+
+        .date {
+            float: left;
+            text-align: center;
+            margin-top: 13px;
+        }
+
+           .date span {
+                display: inline-block;
+                margin-top: 6px;
+            }
+
+.functionBar {
+    position: relative;
+    height: 50px;
+    /*padding: 10px 0px;*/
+    background: #ffffff;
+    box-shadow: 0 0 5px #666;
+    z-index:999
+}
+
+    .functionBar .barLeft {
+        float: left;
+        margin-left: 20px;
+        height: 100%;
+        position:absolute;
+        top:10px;
+    }
+
+        .functionBar .barLeft div {
+            float: left;
+        }
+
+    .functionBar .barRight {
+        float: right;
+        margin-right: 20px;
+        vertical-align: top;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+        .filter .pluginSelect,
+        .pluginDate,
+        .functionBar .barRight .pluginSelect {
+            display: inline-block;
+            height: 30px;
+            width: 210px;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        .functionBar .barRight button.btn {
+            margin-right: 5px;
+            margin-left: -3px;
+        }
+
+    .functionBar .filter {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 1px 5px #666;
+        z-index: 2;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: right;
+        padding-right: 213px;
+    }
+
+        .functionBar .filter.on {
+            display: block;
+        }
+
+.filter form {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.filter .pluginDate {
+    width: auto
+}
+
+/*正文*/
+.body, .groupTab {
+    margin: 10px 20px 0;
+    background: #ffffff;
+}
+
+.body {
+    min-height: 500px;
+}
+
+/*分组*/
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.groupTab .groupBox {
+    flex: 1;
+    margin-right: 10px;
+    height:42px;
+}
+
+    .groupTab .groupBox .groupContent {
+        flex: 1;
+        width: 1428px;
+        overflow: hidden;
+        position: relative;
+        height: 42px;
+    }
+
+        .groupTab .groupBox .groupContent ul {
+            white-space: nowrap;
+            flex-wrap: nowrap;
+            display: inline-block;
+            position: absolute;
+        }
+
+            .groupTab .groupBox .groupContent ul > li {
+                display: inline-block;
+                cursor: pointer;
+                padding: 0 20px;
+                text-align: center;
+                height: 40px;
+                line-height: 38px;
+                border-bottom: 2px solid #fff;
+                padding: 0 20px;
+            }
+
+                .groupTab .groupBox .groupContent ul > li:hover, .groupTab .groupBox .groupContent ul > li.active {
+                    border-bottom: 2px solid #ff9000;
+                    color: #ff9000;
+                    ;
+                }
+
+.groupBox .toLeft, .groupBox .toRight {
+    display: inline-block;
+}
+
+    .groupBox .toLeft i, .groupBox .toRight i {
+        width: 31px;
+        cursor: pointer;
+        height: 41px;
+        display: block;
+        background: url(../images/sprint_icon.png) left top no-repeat;
+    }
+
+        .groupBox .toLeft i.toleftIcon {
+            background-position: 0px -229px;
+        }
+
+            .groupBox .toLeft i.toleftIcon:hover {
+                background-position: -98px -229px;
+            }
+
+    .groupBox .toLeft.disabled i.toleftIcon {
+        background-position: -197px -229px;
+    }
+
+    .groupBox .toRight i.toRightIcon {
+        background-position: -49px -229px;
+    }
+
+        .groupBox .toRight i.toRightIcon:hover {
+            background-position: -148px -229px;
+        }
+
+    .groupBox .toRight.disabled i.toRightIcon {
+        background-position: -246px -229px;
+    }
+
+
+.groupTabRight {
+    width: 23px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    margin-right: 20px;
+}
+
+    .groupTabRight .groupTool {
+        margin-top: 15px;
+        position: relative;
+        height: 20px;
+        display: inline-block;
+        width: 23px;
+        background: url(../images/sprint_icon.png) no-repeat 2px top;
+    }
+
+.tips {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 51px;
+    right: -10px;
+    z-index: 1000;
+    width: 120px;
+    padding: 1px;
+    font-size: 12px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.tipsContent > li {
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+    .tipsContent > li:last-child {
+        border-bottom: 0;
+    }
+
+    .tipsContent > li:hover {
+        background: #eee;
+    }
+
+.tips > .tipsarrow,
+.tips > .tipsarrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+}
+
+.tips > .tipsarrow {
+    border-width: 11px;
+}
+
+.tips.bottom .tipsarrow {
+    border-bottom-color: #ccc;
+    top: -11px;
+    border-top: 0;
+    left: 82%;
+    margin-left: -11px;
+}
+
+    .tips.bottom .tipsarrow:after {
+        border-bottom-color: #fff;
+        content: "";
+        border-top: 0;
+        margin-left: -10px;
+        top: 1px;
+    }
+
+.groupTabRight:hover .groupTool {
+    background-position: -28px 0px;
+}
+/*.groupTabRight:hover .tips{display: block;}*/
+
+.content {
+    padding: 10px;
+    position: relative;
+    z-index:99
+}
+
+    .content > ul {
+        /*padding-bottom: 40px;*/
+    }
+
+.pageBox {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;z-index:100
+}
+
+/*用户列表的一个单元*/
+.marginDiv {
+    width: 25%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+    .marginDiv .contentDiv {
+        width: 94%;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 3px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background: #11b883;
+    }
+
+        .marginDiv .contentDiv .bodyDiv {
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+            .marginDiv .contentDiv .bodyDiv .titleHead {
+                padding: 0 10px;
+                height: 50px;
+                background: #e3edf3;
+                vertical-align: middle;
+            }
+
+.userIcon, .equpmentIcon {
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    vertical-align: middle;
+    background: url(../images/icon.png) -1px -109px no-repeat;
+    cursor:pointer;
+}
+
+.equpmentIcon {
+    background-position: -42px -115px;
+    width: 42px;
+}
+
+.marginDiv .contentDiv .bodyDiv .titleHead span {
+    display: inline-block;
+    max-width: 64%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 50px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+    .marginDiv .contentDiv .bodyDiv .titleHead span.stateIco {
+        float: right;
+        background: #11b883;
+        color: #fff;
+        line-height: 20px;
+        margin-top: 15px;
+        width: 35px;
+        border-radius: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+.marginDiv .contentDiv .bodyDiv .bodyText {
+    padding: 0px 10px;
+}
+
+    .marginDiv .contentDiv .bodyDiv .bodyText div {
+        line-height: 24px;
+        width: 98%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .marginDiv .contentDiv .bodyDiv .bodyText .strong {
+        font-weight: 600;
+    }
+
+    .marginDiv .contentDiv .bodyDiv .bodyText .grey {
+        color: #666;
+    }
+
+/* 包裹管理*/
+.packageManage {
+    /*min-height: 630px;*/
+    position: relative;
+}
+
+    .packageManage .marginDiv .contentDiv {
+        background: #0e93f0;
+    }
+
+    .packageManage .marginDiv.disabled .contentDiv {
+        background: #ff5a5a;
+    }
+
+    .packageManage .marginDiv.green .contentDiv {
+        background: #11b883;
+    }
+
+.marginDiv .contentDiv .textInfo,
+.marginDiv .contentDiv .bottomInfo {
+    background: #e3edf3;
+    padding: 8px;
+}
+
+    .marginDiv .contentDiv .textInfo > div {
+        border-bottom: 1px dashed #ccc;
+    }
+
+    .marginDiv .contentDiv .bottomInfo i {
+        vertical-align: -2px;
+        margin-right: 5px;
+        background: url(../images/sprint_icon.png) left top no-repeat;
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+    }
+
+        .marginDiv .contentDiv .bottomInfo i.personnel {
+            background-position: -113px -54px;
+        }
+
+        .marginDiv .contentDiv .bottomInfo i.date {
+            background-position: -140px -54px;
+        }
+
+.marginDiv .contentDiv .bottomInfo {
+    overflow: hidden;
+    color: #666;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+    .marginDiv .contentDiv .bottomInfo .personInfo {
+        float: left;
+        width: 40%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .marginDiv .contentDiv .bottomInfo .dateInfo {
+        float: right
+    }
+
+.marginDiv .contentDiv .textInfo label,
+.marginDiv .contentDiv .textInfo span {
+    display: inline-block;
+    line-height: 30px;
+}
+
+.marginDiv .contentDiv .textInfo label {
+    vertical-align: top;
+}
+
+.marginDiv .contentDiv .textInfo span {
+    width: 72%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*判图员状态*/
+li.offLine {
+}
+
+    li.offLine .contentDiv {
+        background: #a0a0a0;
+    }
+
+        li.offLine .contentDiv .bodyDiv .titleHead span.stateIco {
+            background: #a0a0a0;
+        }
+
+li.disabled {
+}
+
+    li.disabled .contentDiv {
+        background: #ff5a5a;
+    }
+
+        li.disabled .contentDiv .bodyDiv .titleHead span.stateIco {
+            background: #ff5a5a;
+        }
+/*滑过状态*/
+.hoverDiv {
+    display: none;
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    text-align: center;
+}
+
+    .hoverDiv > ul {
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        margin-top: -20px;
+        vertical-align: middle;
+    }
+
+        .hoverDiv > ul > li {
+            float: left;
+            margin: 0 5px;
+        }
+
+.eidtIcon {
+    cursor: pointer
+}
+
+.disableIcon, .eidtIcon, .deleteIcon, .stampIcon, .adjustGroup, .resetPwdIcon, .rightMarkIcon, .reportIcon {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: url(../images/sprint_icon.png) 0 -137px no-repeat;
+}
+
+.disableIcon {
+    background-position: -1px -135px;
+}
+/*禁用*/
+.eidtIcon {
+    background-position: -180px -138px;
+}
+/*编辑*/
+.deleteIcon {
+    background-position: -120px -138px;
+}
+/*删除*/
+.stampIcon {
+    background-position: -120px -81px;
+}
+
+.rightMarkIcon {
+    background-position: -62px -135px;
+}
+
+.reportIcon {
+    background-position: -180px -81px;
+}
+
+.resetPwdIcon {
+    background-position: -1px -81px;
+}
+/*重置密码*/
+.adjustGroup {
+    background-position: -62px -81px;
+}
+/*调整分组*/
+.resetPwdIcon:hover {
+    background-position: -244px -81px;
+}
+
+.disableIcon:hover {
+    background-position: -244px -135px;
+}
+
+.eidtIcon:hover {
+    background-position: -423px -138px;
+}
+
+.deleteIcon:hover {
+    background-position: -363px -138px;
+}
+
+.stampIcon:hover {
+    background-position: -363px -81px;
+}
+
+.rightMarkIcon:hover {
+    background-position: -305px -135px;
+}
+
+.reportIcon:hover {
+    background-position: -423px -81px;
+}
+
+.adjustGroup:hover {
+    background-position: -305px -81px;
+}
+
+/*.marginDiv:hover .hoverDiv {
+    display: table-cell;
+}*/
+.deviceList:hover .hoverDiv {
+    display: table-cell;
+}
+/*角色列表的一个单元，由用户列表单元扩展而来*/
+.roleManage > ul {
+    position: relative;
+    /*-webkit-column-count:5;  Safari 和 Chrome
+column-count:5;
+ -webkit-column-gap: 0px;
+ -moz-column-gap: 0px; */
+}
+
+.roleManage .marginDiv {
+    width: 19.8%;
+    display: inline-block;
+    float: none;
+}
+
+    .roleManage .marginDiv .contentDiv {
+        background: #0e93f0;
+    }
+
+        .roleManage .marginDiv .contentDiv .bodyDiv .titleHead {
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+.marginDiv .contentDiv .bodyDiv .titleHead h5 {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #0e93f0;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 60%;
+    white-space: nowrap;
+}
+
+.roleManage .marginDiv .contentDiv .bodyDiv .titleHead h5 {
+    width: 95%;
+}
+
+.marginDiv .contentDiv .bodyDiv .titleHead h5 small {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.roleManage .marginDiv .contentDiv .bodyDiv .bodyText div {
+    border-bottom: 1px dashed #ccc;
+    vertical-align: top;
+    color: #333;
+}
+
+    .roleManage .marginDiv .contentDiv .bodyDiv .bodyText div:last-child {
+        border: 0;
+    }
+
+    .roleManage .marginDiv .contentDiv .bodyDiv .bodyText div label {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+    }
+
+    .roleManage .marginDiv .contentDiv .bodyDiv .bodyText div span {
+        display: inline-block;
+        width: 65%;
+        white-space: initial;
+    }
+
+/*判图员监控列表的一个单元，由用户列表单元扩展而来*/
+/*设备监控*/
+.controlManage .marginDiv .contentDiv .bodyDiv .titleHead {
+    position: relative;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+    .controlManage .marginDiv .contentDiv .bodyDiv .titleHead .watermark {
+    }
+
+    .controlManage .marginDiv .contentDiv .bodyDiv .titleHead h5 {
+        display: inline-block;
+        color: #333;
+        margin-left: 8px;
+    }
+
+.controlManage .userIcon {
+    vertical-align: super;
+    margin-right: 10px;
+}
+
+.controlManage .marginDiv .contentDiv .bodyDiv .bodyText {
+    padding: 0;
+    padding-top: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.controlManage .marginDiv .contentDiv .bodyDiv .titleHead .watermark,
+.marginDiv .contentDiv .bodyDiv .bodyText .checkerState { /*判图状态  公用 包裹，*/
+    font-size: 12px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 8px;
+    right: -34px;
+    width: 100px;
+    text-align: center;
+    background: rgba(0,119,229,.5);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+}
+
+.controlManage .marginDiv .contentDiv .bodyDiv .titleHead .watermark {
+    right: auto;
+    left: -30px;
+    height: 18px;
+    line-height: 18px;
+    background: rgba(255,255,255,.5);
+    color: #333;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -moz-transform: rotate(-45deg); /* Firefox */
+    -webkit-transform: rotate(-45deg);
+}
+
+.controlManage .marginDiv .contentDiv .bodyDiv .bodyText .checkerState.green {
+    background: rgba(15,150,98,.6)
+}
+
+.controlManage .marginDiv .contentDiv .bodyDiv .bodyText .checkerState.red {
+    background: rgba(252,58,32,.6)
+}
+
+.monitor .marginDiv .contentDiv .bodyDiv .titleHead i.equpmentIcon {
+    vertical-align: -3px;
+}
+
+.imgBox {
+    display: table;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    height: 119px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .imgBox img {
+        max-width: initial;
+        max-height: initial;
+        height: inherit;
+    }
+/*不同分辨率高度不同，需要媒体查询*/
+
+/*设备管理*/
+.equipMentLayer .hoverDiv > ul > li {
+    margin: 0 7px;
+}
+
+.equipMentLayer .marginDiv .contentDiv .bodyDiv .bodyText {
+    padding: 5px 8px;
+}
+
+    .equipMentLayer .marginDiv .contentDiv .bodyDiv .bodyText div {
+        line-height: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.equipMentLayer .marginDiv .contentDiv .bodyDiv .titleHead span {
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+/*错误页样式*/
+.error.content {
+    position: relative;
+    min-height: 550px;
+}
+
+.error .errorBox {
+    background: #fff;
+    /*min-height: 600px;*/
+}
+
+.error.content .nodataImg,
+.error.content .errorImg {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -251px;
+    margin-top: -177px;
+}
+
+
+/*补丁样式*/
+.width130 {
+    width: 180px;
+}
+
+
+/*动画*/
+.rolesLayer.rightBounceOut {
+}
+
+@-webkit-keyframes navFromRightBounceOut {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        padding-right: 0px;
+    }
+
+    40% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        padding-right: 20px;
+    }
+
+    80% {
+        padding-right: 0px;
+    }
+
+    90%, 100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+@keyframes navFromRightBounceOut {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        padding-right: 0px;
+    }
+
+    40% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        padding-right: 20px;
+    }
+
+    80% {
+        padding-right: 0px;
+    }
+
+    90%, 100% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+}
+
+.rightBounceOut {
+    left: auto;
+    right: -10px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: 500ms;
+}
+
+    .rightBounceOut.effeckt-show {
+        right: 0px;
+        visibility: visible;
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    .rightBounceOut.effeckt-hide {
+        -webkit-animation: navFromRightBounceOut 500ms both ease;
+        animation: navFromRightBounceOut 500ms both ease;
+    }
+
+.checkConfirm{
+    margin:0 auto;
+}
+.checkConfirm li{
+    line-height:50px
+}
+    .checkConfirm li span{
+        margin-left:10px;
+    }
+    .checkConfirm li img {
+        height: 30px;
+        width: 30px;
+        margin-top: -5px;
+        vertical-align: middle;
+    }
+.userMenu {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    top: 50px;
+    left: 40px;
+    z-index: 1000;
+    width: 120px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+    opacity: 0.96;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    color: #333333
+}
+    .userMenu .userMenuContent > li {
+        line-height: 50px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        padding-left: 40px;
+    }
+.userMenuContent > li:hover {
+    background: #eeeeee
+}
+.userMenuContent>li> img {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 16px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 14px;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-size: 14px;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 14px;
+}
+
+input::-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-size: 14px;
+}
+.divloading{width:100%;height:100%;position:absolute;filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5; top: 0px;
+    left: 0;z-index:1000;
+    background-color: #000; display:none;}
+.divloading img{position:absolute;top:50%;left:50%;margin-left:-16px; margin-top:-16px;}

@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/Content/css/mapmonitor.css" rel="stylesheet" />
+<link href="~/Content/javascript/offlineBMap/css/bmap.css" rel="stylesheet" />
+<div class="mapmain">
+    <input type="hidden" id="hid_securityName" value="@ViewBag.sName" />
+    <input type="hidden" id="isOnLine" value="@ViewBag.IsOnline" />
+    <input type="hidden" id="mapTilesUrl" value="@ViewBag.MapTilesUrl" />
+    <div id="mapWrap"></div>
+
+    <div class="citychoice">
+        <button>添加</button>
+    </div>
+    <div class="mapleft">
+        <div class="mapleftinput">
+            <input type="text" placeholder="搜索监管点名称" id="searchTxt" class="sreachtxt" />
+            <a href="#" class="mapleftreseachbtn" id="searchBtn">
+            </a>
+        </div>
+        <div class="mapleftbtn">
+            <a href="#" class="active" id="alllist">全部列表</a>
+            @*<a href="#" id="collectlist">我的收藏(<span id="collectCount">0</span>)</a>*@
+            <div class="clear"></div>
+        </div>
+        <div class="mapleftlist">
+            <div class="mapleftlist_left">
+                @*@{ Html.RenderAction("GetLeftPartial", "MapMonitor");}*@
+            </div>
+            @*<div class="mapleftlist_right">
+                @{ Html.RenderAction("GetLeftPartial2", "MapMonitor");}
+            </div>*@
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="divdownbtn">
+        </div>
+        <div class="divupbtn">
+        </div>
+
+    </div>
+    <div class="right mapright">
+        @*@{ Html.RenderAction("GetSecurityDetial", "MapMonitor");}*@
+    </div>
+    <div class="mapdialog" id="dialogvideo" draggable="true">
+
+        <div class="mapdialogtittle">
+            <div class="left">大航海集装箱安检机设备安检机 - 视频监控</div>
+            <div class="right">
+                <div class="heightcenter">
+                    <a href="#" class="colseright" id="colsedialog">
+                    </a>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="mapdialogcontent">
+            <div class="heightcenter">
+                <img src="~/Content/Images/img1.png" />
+            </div>
+        </div>
+    </div>
+    <div class="mapdialog2" id="dialogvideo2" draggable="true">
+        <input type="hidden" id="hid_deviceNums" value="0" />
+        <input type="hidden" id="hid_deviceId" value="" />
+        <div class="mapdialogtittle">
+            <div class="left">设备视频列表</div>
+            <div class="right">
+                <div class="heightcenter">
+                    <a href="#" class="colseright" id="colsedialogList">
+                    </a>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="mapdialogcontent">
+            <div class="heightcenter">
+                <div class="videoListPrev"></div>
+                <div class="videoList">
+                    <ul></ul>
+
+                </div>
+                <div class="pointPage">
+                    <ul></ul>
+                </div>
+                <div class="videoListNext"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapdialog" id="dialogpic" draggable="true">
+
+        <div class="mapdialogtittle">
+            <div class="left">大航海集装箱安检机设备安检机 - 图像监控</div>
+            <div class="right">
+                <div class="heightcenter">
+                    <a href="#" class="colseright" id="colsedialog2">
+                    </a>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="mapdialogcontent">
+            <div class="heightcenter">
+                <img src="~/Content/Images/loading.gif" id="text" style="width:380px;height:210px;margin-top:5%" />
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/Content/javascript/supervisionMap/supervisionMap.js"></script>
+<script src="~/Content/javascript/page/page.js"></script>
+<script src="~/Content/javascript/dynamicLoadJs.js"></script> 

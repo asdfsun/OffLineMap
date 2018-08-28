@@ -1,0 +1,342 @@
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+.standard h3,
+.textLink h3,
+.groupBtn h3,
+.radioBtn h3,
+.checkbox h3,
+.textInput h3,
+.textField h3 {
+  margin: 5px;
+  background: #cccccc;
+}
+.standard span,
+.textLink span,
+.groupBtn span,
+.radioBtn span,
+.checkbox span,
+.textInput span,
+.textField span {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.standard .iconBtn,
+.textLink .iconBtn,
+.groupBtn .iconBtn,
+.radioBtn .iconBtn,
+.checkbox .iconBtn,
+.textInput .iconBtn,
+.textField .iconBtn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: -2px;
+  background: #cccccc;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.standard button {
+    border: none;
+    border-radius: 4px;
+    line-height: 35px;
+    height: 35px;
+    width: 80px;
+    text-align: center;
+    color: #fff;
+    font: 14px "Microsoft YaHei";
+    margin: 8px 20px;
+    background: linear-gradient(#f57300, #eb5e00);
+    cursor:pointer;
+}
+    .standard button:hover {
+        background: linear-gradient(#e96f03, #df5a01);
+    }
+    .standard button:focus {
+        background: linear-gradient(#e96f03, #df5a01);
+    }
+.standard button.standardDisable {
+  border-color: #a0a0a0;
+  background: #a0a0a0;
+  color: #666666;
+  cursor: not-allowed;
+}
+.standard button.cancelBtn {
+  border:none;
+  border-radius: 4px;
+  line-height: 35px;
+  height:35px;
+  width:80px;
+  text-align: center;
+  color: #fff;
+  font: 14px "Microsoft YaHei";
+  /*margin-right:15px;*/
+  background: linear-gradient(#b5b5b5, #a0a0a0);
+  cursor:pointer;
+}
+.standard button.cancelBtn:focus,
+.standard button.cancelBtn:hover {
+   background: linear-gradient(#a5a2a2, #908e8e);
+}
+.textLink a {
+  margin-right: 20px;
+  height: 30px;
+  line-height: 30px;
+  color: #ff9600;
+}
+.textLink a:hover {
+  color: #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.textLink a:active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.textLink a.textLinkDisable {
+  color: #666666;
+  cursor: not-allowed;
+  border-bottom: none;
+}
+.groupBtn .groupBtnList {
+  float: left;
+  margin-right: 20px;
+  height: 30px;
+  line-height: 30px;
+  border-left: 1px solid #ff9600;
+  border-top: 1px solid #ff9600;
+  border-bottom: 1px solid #ff9600;
+}
+.groupBtn .groupBtnList a {
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #ff9600;
+}
+.groupBtn .groupBtnList a:hover {
+  background: #cccccc;
+}
+.groupBtn .groupBtnList a:active {
+  background: #000000;
+}
+.groupBtn .groupBtnList.groupBtnDisable a {
+  background: #a0a0a0;
+  color: #666666;
+  cursor: not-allowed;
+}
+.groupBtn .groupBtnList.iconList a {
+  padding: 0;
+  width: 32px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.groupBtn .groupBtnList.iconList a i {
+  margin-right: 0;
+}
+.radioBtn .radioBox,
+.checkbox .radioBox,
+.radioBtn .checkboxList,
+.checkbox .checkboxList {
+  line-height: 30px;
+}
+.radioBtn .radioBox div,
+.checkbox .radioBox div,
+.radioBtn .checkboxList div,
+.checkbox .checkboxList div {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: normal;
+}
+.radioBtn .radioBox div:hover,
+.checkbox .radioBox div:hover,
+.radioBtn .checkboxList div:hover,
+.checkbox .checkboxList div:hover {
+  background: #e5e5e5;
+}
+.radioBtn input,
+.checkbox input {
+  display: none;
+}
+.radioBtn label,
+.checkbox label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 20px;
+  cursor: pointer;
+  background: url("../../../Images/unit-btnIcon.png") no-repeat 0 2px;
+}
+.radioBtn label.checked,
+.checkbox label.checked {
+  background-position: 0 -19px;
+}
+.radioBtn label.radioDisable,
+.checkbox label.radioDisable {
+  background-position: 0 -63px;
+}
+.radioBtn label.radioDisable.notChick,
+.checkbox label.radioDisable.notChick {
+  background-position: 0 -41px;
+}
+.checkbox label {
+  background: url("../images/unit-checkBoxIcon.png") no-repeat 0 -28px;
+}
+.checkbox label.c_on {
+  background-position: 0 2px;
+}
+.checkbox label.radioDisable {
+  background-position: 0 -84px;
+}
+.checkbox label.radioDisable.notChick {
+  background-position: 0 -58px;
+}
+.textInput input {
+  width: 188px;
+  border: 1px solid #b0b0b0;
+  line-height: 28px;
+  height: 28px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.textInput input:focus {
+  border: 1px solid #ff9600;
+}
+.textInput input.errorInput {
+  border: 1px solid #f8471d;
+  color: #f8471d;
+}
+.textInput input[disabled] {
+  color: #ffffff;
+  background: #a0a0a0;
+}
+.textField textarea {
+  vertical-align: text-top;
+}
+.plugin_dialog {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+.plugin_dialog .plugin_dialog_bg {
+  background: #000;
+  filter: alpha(opacity=60);
+  min-height: 100%;
+  opacity: .6;
+  position: fixed;
+  width: 100%;
+  _height: 6400px;
+}
+.plugin_dialog .plugin_dialog_content,.plugin_dialog .plugin_dialog_contentInfo{
+  position: fixed;
+  min-width: 300px;
+  z-index: 1000;
+  background: #ffffff;
+}
+.plugin_dialog .plugin_dialog_hd {
+  background: #0089E1;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+.plugin_dialog .plugin_dialog_hd .plugin_dialog_logotop {
+  margin-left: 4%;
+}
+.plugin_dialog .plugin_dialog_hd .plugin_dialog_logotop p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.plugin_dialog .plugin_dialog_hd .closeBtn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  margin-top: 6px;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  background: url('images/closeBtn.png') no-repeat 0 0;
+}
+.plugin_dialog .plugin_dialog_hd .closeBtn:hover {
+  background-position: -18px 0;
+}
+.plugin_dialog .plugin_dialog_bd {
+  border: #000 solid 1px;
+  position: relative;
+  text-align: left;
+  font-size:16px;
+  padding: 0 20px;
+  width:initial;
+}
+.plugin_dialog .plugin_dialog_bd .ask,
+.plugin_dialog .plugin_dialog_bd .warn,
+.plugin_dialog .plugin_dialog_bd .ok {
+  display: inline-block;
+  position: relative;
+  top: 7px;
+  width: 30px;
+  height: 22px;
+  background: url('images/dialog_icon.png') no-repeat 1px 0;
+}
+.plugin_dialog .plugin_dialog_bd .warn {
+  background-position: -28px 0;
+}
+.plugin_dialog .plugin_dialog_bd .ok {
+  background-position: -57px 0;
+}
+.plugin_dialog .plugin_dialog_m40 {
+  margin: 40px auto;
+}
+.plugin_dialog .Btn {
+  text-align: center;
+  margin: 10px auto;
+}
+.plugin_dialog .title_box {
+  height: 30px;
+  width: 85%;
+}
+.plugin_dialog_content .plugin_dialog_bd {
+  border: none;
+}
+.plugin_dialog_warning .plugin_dialog_content {
+  background: #fef0ed;
+  border: 1px solid #F86B52;
+  bottom: 1% ;
+  right: 1%;
+  position: fixed;
+  top: auto;
+  width: 30%;
+  z-index: 1000;
+}
+.plugin_dialog_warning .plugin_dialog_content .plugin_dialog_hd {
+  background: #fa856f;
+}
+.plugin_dialog_warning .plugin_dialog_content .plugin_dialog_hd p {
+  color: #ffffff;
+}
+.plugin_dialog_warning .plugin_dialog_content .plugin_dialog_bd {
+  line-height: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/*个性化*/
+.plugin_dialog  .plugin_dialog_personal{ border-radius:8px; font-size:14px; background:#0dc178 ; color:#fff;}
+
+.plugin_dialog_personal .plugin_dialog_hd{ background: #0dc178; height:50px;}
+.plugin_dialog_personal .plugin_dialog_hd  .closeBtn{top:12px; right:12px;}
+.plugin_dialog_personal .plugin_dialog_hd .plugin_dialog_logotop p{line-height:50px;}
+.plugin_dialog_personal .plugin_dialog_hd.orange{background:#ff7e00}

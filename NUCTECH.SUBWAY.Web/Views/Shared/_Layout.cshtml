@@ -1,0 +1,117 @@
+﻿@{ 
+    string title = System.Configuration.ConfigurationManager.AppSettings["SystemTitle"];
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Css/reset.css" rel="stylesheet" />
+    <link href="~/Content/Css/common.css" rel="stylesheet" />
+    <script src="~/Content/javascript/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="headerLeft">
+            <div class="logo"></div>
+            <div class="title">@title</div> 
+        </div>
+        <div class="headerRight">
+            <div class="nav">
+                <ul class="navBar" id="navBar">
+                    @*<li class="navBtn" u="1">
+                        <span>
+                            系统管理
+                        </span>
+                        <div class="underline"></div>
+                        <div class="secondLevel">
+                            <ul>
+                                <li><a href="/SystemManage/User/Index?treeId=1">用户管理</a></li>
+                                <li><a href="/SystemManage/Role/Index?treeId=1">角色管理</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navBtn" u="2">
+                        <span>
+                            监控管理
+                        </span>
+                        <div class="underline"></div>
+                        <div class="secondLevel">
+                            <ul>
+                                <li><a href="/DeviceManage/Device/Monitor?treeId=2">设备监控</a></li>
+                                <li><a href="/JudgeUserManage/JudgeUser/Index?treeId=2">判图员监控</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navBtn" u="6">
+                        <span>
+                            包裹管理
+                        </span>
+                        <div class="underline"></div>
+                        <div class="secondLevel">
+                            <ul>
+                                <li><a href="/PackageManage/PackageInfo/Index?treeId=6">图像管理</a></li>
+                                <li><a href="/PackageManage/MarkImage/Index?treeId=6">标记图像</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navBtn" u="7">
+                        <span>
+                            统计管理
+                        </span>
+                        <div class="underline"></div>
+                        <div class="secondLevel">
+                            <ul>
+                                <li><a href="/StatisticManage/DeviceState/Index?treeId=7">设备状态统计</a></li>
+                                <li><a href="/StatisticManage/ImageSuspicion/Index?treeId=7">包裹图像统计</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navBtn" u="8">
+                        <span>
+                            业务管理
+                        </span>
+                        <div class="underline"></div>
+                        <div class="secondLevel">
+                            <ul>
+                                <li><a href="/DeviceManage/Device/Index?treeId=8">设备管理</a></li>
+                                <li><a href="/DeviceManage/Device/DeviceUserGroupBind?treeId=8">设备绑定</a></li>
+                                <li><a href="/DeviceManage/Mark/Index?treeId=8">标记管理</a></li>
+                            </ul>
+                        </div>
+                    </li>*@
+
+                </ul>
+            </div>
+            <div class="user">
+                <i></i>
+                <span>gssadmin</span>
+            </div>
+            <div class="more">
+                <em></em>
+                <div class="tips bottom" id="#tips">
+                    <div class="tipsarrow"></div>
+                    <ul class="tipsContent">
+                        <li id="shutdown" style="display: none;"><i class="shutdown"></i>关机</li>
+                        <li id="cancel"><i class="cancel"></i>退出登录</li>
+                        <li id="resetPwd"><i class="resetPwd"></i>修改密码</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="date">
+                <span class="time" id="time">15:33</span>
+                <span id="date">08/23</span>
+            </div>
+        </div>
+       
+    </div>
+     
+       @RenderBody()
+     
+</body>
+</html>
+<script src="~/Content/javascript/menu/menu.js"></script>

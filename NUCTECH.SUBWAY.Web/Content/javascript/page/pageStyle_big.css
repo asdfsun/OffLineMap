@@ -1,0 +1,170 @@
+﻿@media screen and (min-width:1600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+    .tcdPageCode {
+        color: #666666;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Microsoft YaHei", Arial;
+    }
+
+        .tcdPageCode a {
+            display: inline-block;
+            color: #666666;
+            height: 28px;
+            min-width: 28px;
+            line-height: 28px;
+            padding: 0 2px;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            /*border-radius: 0px;*/
+            /*vertical-align: middle;*/
+        }
+
+            .tcdPageCode a:hover {
+                text-decoration: none;
+                border: 1px solid #ff9600;
+            }
+
+        .tcdPageCode span.ellipsis {
+            display: inline-block;
+            width: 16px;
+            margin-left: -3px;
+            margin-right: -3px;
+        }
+
+        .tcdPageCode a.current {
+            display: inline-block;
+            /*height: 28px;
+	line-height: 28px;
+	width: 28px;*/
+            padding: 0 0px;
+            color: #ff9600;
+            border: 1px solid #ff9600;
+        }
+
+        .tcdPageCode a.disabled {
+            display: inline-block;
+            /*height: 28px;
+	width: 28px;
+	line-height: 28px;*/
+            padding: 0 0px;
+            color: #666666;
+            background-color: #a0a0a0;
+            border: 1px solid #bfbfbf;
+        }
+
+        .tcdPageCode .changeNum {
+            width: 28px;
+            height: 28px;
+            border: 1px solid #ddd;
+            margin: 0 5px 0 15px;
+            padding-left: 4px;
+        }
+
+        .tcdPageCode .pageCount {
+            display: inline-block;
+            margin: 0 5px;
+            text-align: left;
+        }
+
+        .tcdPageCode .changeBtn {
+            width: 46px;
+            height: 28px;
+            margin-left: 0px;
+        }
+
+        .tcdPageCode .simcur {
+            display: inline-block;
+            color: #ff9600;
+            margin: 0 5px;
+        }
+
+        .tcdPageCode .prevPage,
+        .tcdPageCode .nextPage,
+        .tcdPageCode .disLeft,
+        .tcdPageCode .disRight {
+            background: url("images/page.png") no-repeat;
+            text-indent: -9999px;
+        }
+
+        .tcdPageCode .prevPage,
+        .tcdPageCode .disLeft {
+            background-position: 8px 6px;
+        }
+
+        .tcdPageCode .nextPage,
+        .tcdPageCode .disRight {
+            background-position: 8px -28px;
+        }
+
+        .tcdPageCode .firstPage, .tcdPageCode .endPage {
+            background: url("images/page.png") no-repeat;
+            text-indent: -9999px;
+        }
+
+        .tcdPageCode .firstPage {
+            background-position: 9px -62px;
+        }
+
+        .tcdPageCode .endPage {
+            background-position: -26px -60px;
+        }
+
+    .smallpage {
+    }
+
+        .smallpage > a {
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            margin: 0 2px;
+        }
+
+            .smallpage > a.prevPage, .smallpage > a.disLeft {
+                background-position: -34px 4px;
+            }
+
+            .smallpage > a.nextPage, .smallpage > a.disRight {
+                background-position: -33px -34px;
+            }
+
+        .smallpage .changeNum {
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            margin: 0 2px 0 8px;
+        }
+
+        .smallpage .changeBtn {
+            width: 32px;
+            height: 18px;
+        }
+
+        .smallpage .pageCount {
+            margin: 0 3px;
+        }
+
+        .smallpage .firstPage {
+            background-position: -34px 4px;
+        }
+
+        .smallpage .firstPage {
+            background-position: 5px -106px;
+        }
+
+        .smallpage .endPage {
+            background-position: -32px -106px;
+        }
+}
